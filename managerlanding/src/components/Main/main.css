@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  color: hsl(228, 39%, 23%);
+}
+
+.even-columns 
+{
+  display: flex;
+  margin-top: 2em;
+}
+
+
+
+.even-child1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.even-child1 h1 {
+  width: 70%;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.even-child1 p {
+  width: 50%;
+  color: grey;
+}
+
+
+
+@media screen and (max-width:68.75em)
+{
+  .even-columns
+  {
+     flex-direction: column;
+     align-items: center;
+  }
+  .even-child1
+  {
+    align-items: center;
+  }
+  .even-child1 p {
+    width: 70%;
+}
+}
+
+@media screen and (max-width:29.375em)
+{
+  .buttonMain 
+  {
+    display: block;
+  }
+  .even-child1
+  {
+    order: 1;
+    margin-top: 1em;
+  }
+  .even-child1 h1 
+  {
+    font-size: 3em;
+    width: 71%;
+  }
+  
+}
+
+
+
+
+
+

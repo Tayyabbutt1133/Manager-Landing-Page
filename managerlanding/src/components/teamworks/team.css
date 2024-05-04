@@ -1,0 +1,14 @@
+.buttonteam 
+{
+    background: white;
+    color: orange;
+}
+.buttonteam:hover
+{
+    color: white;
+}
+.buttonteam
+{
+    margin-left: 20em;
+    margin-top: 0.5em;
+}

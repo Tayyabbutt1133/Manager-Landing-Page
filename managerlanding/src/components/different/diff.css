@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.evendiff-child h2 {
+
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 
+
+.even-columns 
+{
+    border: 2px solid salmon;
+}
+
+.numbered-items{
+    border: 2px solid brown;
+} */
+
+
+
+.evendiff-child p 
+{
+    width: 80%;
+    color: grey;
+}
+
+.numbered-items li h3 
+{
+    display: flex;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+   gap: 2em;
+   align-items: center;
+}
+.numbered-items li h3 span
+{
+    background: hsl(12, 88%, 59%);
+    color: white;
+    width: 4em;
+    height: 2.5em;
+    display: flex;
+     justify-content: center;
+     border-radius: 20px;
+     align-items: center;
+}
+.numbered-items p 
+{
+    color: grey;
+    width: 70%;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+   margin-left: 6em;
+}
+
+
+
+@media screen and (max-width:68.75em)
+{
+    .evendiff-child
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .evendiff-child p 
+    {
+            text-align: center;
+    }
+    .numbered-items li 
+    {
+        margin-top: 2em;
+    }
+    .evendiff-child h2
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:29.375em)
+{
+    .numbered-items p 
+    {
+        margin-left: 0;
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .numbered-items li h3 
+    {
+    gap: 0.6em;
+    font-size: 0.8em;
+    }
+}

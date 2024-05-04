@@ -1,0 +1,89 @@
+body 
+{
+    background: rgb(255, 252, 252);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 2em;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3em;
+}
+
+
+.nav-list li a {
+  text-decoration: none;
+  color: hsl(228, 39%, 23%);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+button {
+  border: 1px solid rgb(245, 93, 38);
+  background: rgb(245, 93, 38);
+  color: white;
+  width: 150px;
+  height: 45px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid rgb(243, 132, 35);
+  background: rgb(243, 132, 35);
+}
+
+.fa-open 
+{
+
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 62.5em) {
+  .nav-list {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .fa-open
+  {
+    display: block;
+    margin-top: 0.54em;
+  }
+  .rightdiv
+  {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+
+@media screen and (max-width:29.375em)
+{
+    button 
+    {
+        display: none;
+    }
+    .fa-open
+    {
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+

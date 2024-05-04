@@ -1,0 +1,72 @@
+@import "https://unpkg.com/open-props";
+
+/* 
+@import "https://unpkg.com/open-props/normalize.min.css"; */
+
+
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider
+{
+    text-align: center;
+}
+
+
+.card 
+{
+    border-radius: 25px;
+    background-color: rgb(240, 240, 240);
+}
+
+.card-content
+{
+    margin: 0 40px;
+}
+.card-image
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+
+}
+.image-content, .card-content
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px 40px;
+}
+
+
+.card-image .card-img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.buttonSlide 
+{
+    margin-top: 2em;
+}
+
+.card-wrapper
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+     gap: var(--size-3);   
+     overflow-x: auto;
+     overscroll-behavior-inline: contain;
+     border: 2px solid red;
+     padding: 2em;
+}
